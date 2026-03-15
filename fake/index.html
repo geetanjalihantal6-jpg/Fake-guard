@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FakeGuard – AI Fake Account Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top bar -->
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-icon">
+      <!-- put your logo file in the same folder or /static and update the path -->
+      <img src="https://plus.unsplash.com/premium_vector-1738508827899-f124a454a3c9?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FakeGuard logo" class="logo-img">
+    </div>
+    <div class="logo-text">
+      <span class="logo-title">AI Fake Account Detector</span>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="#hero">Home</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#analyze" class="nav-cta">Analyze Account</a>
+  </nav>
+</header>
+
+
+  <!-- Hero section -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-heading">
+          Detect Fake Social Media Accounts Instantly
+        </h1>
+        <p class="hero-subtitle">
+          Use AI and machine learning to analyze usernames and profile links, helping you identify fake or suspicious social media accounts in seconds.
+        </p>
+        <div class="hero-pill">
+          Fast • Secure • AI‑Powered
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace with your actual hero image -->
+        <img src="https://www.techmagic.co/blog/content/images/2024/07/cover-AI-in-Cybersecurity.png" alt="AI security illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works + analyzer -->
+  <section id="how-it-works" class="section how-section">
+    <div class="section-inner">
+      <div class="how-grid">
+        <div class="how-image">
+          <!-- Replace with your illustration -->
+          <img src="https://plus.unsplash.com/premium_vector-1682299536328-4f550603213c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team analyzing social media security">
+        </div>
+        <div class="how-panel glass-card" id="analyze">
+          <h2 class="section-title serif">How FakeGuard Works</h2>
+          <p class="small-label">select a platform</p>
+<div class="platform-row">
+  <!-- Instagram -->
+  <button class="platform-btn active" data-platform="instagram" aria-label="Instagram">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram" class="platform-img">
+  </button>
+
+  <!-- X (Twitter) -->
+  <button class="platform-btn" data-platform="x" aria-label="X (Twitter)">
+    <img src="https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebdd90aef8ef8c749e848_X-EverythingApp-Logo-Twitter.jpg" alt="X (Twitter)" class="platform-img">
+  </button>
+
+  <!-- Facebook -->
+  <button class="platform-btn" data-platform="facebook" aria-label="Facebook">
+    <img src="https://static.vecteezy.com/system/resources/previews/021/495/985/non_2x/facebook-social-media-logo-icon-free-png.png" alt="Facebook" class="platform-img">
+  </button>
+</div>
+
+
+          <form id="analyze-form" class="analyze-form">
+            <div class="stacked-inputs">
+              <input
+                type="text"
+                id="identifier"
+                name="identifier"
+                placeholder="ENTER USERNAME"
+                autocomplete="off"
+              />
+              <div class="or-divider">
+                <span>or</span>
+              </div>
+              <input
+                type="url"
+                id="link"
+                name="link"
+                placeholder="LINK (optional)"
+              />
+              <button type="submit" class="primary-btn">
+                <span class="loader" aria-hidden="true"></span>
+                <span class="btn-text">ANALYZE</span>
+              </button>
+            </div>
+            <p class="helper-text">
+              Enter a username or paste a profile link. Choose a platform, then let FakeGuard analyze in seconds.
+            </p>
+          </form>
+
+          <!-- Results injected here -->
+          <div id="result-panel" class="result-panel hidden"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="section about-section">
+    <div class="section-inner about-inner glass-card">
+      <h2 class="section-title serif center">About FakeGuard</h2>
+      <div class="about-grid">
+        <div class="about-illustration">
+          <!-- Replace with your character image -->
+          <img src="https://images.unsplash.com/vector-1756304368710-2620a5017322?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FakeGuard mascot reading a report">
+        </div>
+        <div class="about-text">
+          <p>
+            FakeGuard is an AI‑powered system designed to help users identify fake and suspicious social media accounts. As online platforms grow, fake profiles are increasingly used for scams, misinformation, and identity misuse.
+          </p>
+          <p>
+            The system analyzes account‑related information using machine learning techniques to classify profiles as real or fake. By presenting results in a clear and user‑friendly manner, FakeGuard helps users make informed decisions and stay safe online.
+          </p>
+          <p>
+            Built to promote digital safety, trust, and responsible social media usage.
+          </p>
+          <div class="contact-pill">
+            <div>CONTACT</div>
+            <div>+91 6372927494</div>
+            <div>geetanjalihantal6@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ section -->
+  <section id="faq" class="section faq-section">
+    <div class="section-inner">
+      <h2 class="section-title serif">FAQs</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">What does FakeGuard do?</h3>
+          <p class="faq-answer">
+            FakeGuard helps users identify fake or suspicious social media accounts by analyzing account‑related information using AI and machine learning techniques.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is user data stored or shared?</h3>
+          <p class="faq-answer">
+            No. FakeGuard focuses on analysis only and does not store or share user data, ensuring privacy and security.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Which platforms are supported?</h3>
+          <p class="faq-answer">
+            FakeGuard is designed to work with common social media platforms. Platform support can be extended based on future development.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is this tool free to use?</h3>
+          <p class="faq-answer">
+            FakeGuard is currently developed as an educational project and is free to use for demonstration purposes.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is FakeGuard fully automated?</h3>
+          <p class="faq-answer">
+            Yes. The system automatically analyzes the provided account information and generates results without manual intervention.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 FakeGuard · AI Fake Account Detector</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
